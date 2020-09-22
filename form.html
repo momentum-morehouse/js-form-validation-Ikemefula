@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- The difference ID vs CLASS id can be used to identify only one element and class can be used to identify a full class of elements -->
     <div class="container">
       <h1>Pre-paid Parking Form</h1>
       <form id="parking-form">
@@ -55,3 +56,70 @@
       <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+<!--                          CLIENT-SIDE FORM VALIDATION                                                    
+    -Client-side validation is an INITIAL CHECK and an important feature of good user experience; by catching invalid data on the client-side, the user can fix it straight away. If it gets to the server and is then rejected, a noticeable delay is caused by a round trip to the server and then back to the client-side to tell the user to fix their data.
+    -should not be considered an exhaustive security measure! Your apps should always perform security checks on any form-submitted data on the SERVER-SIDE as well as the CLIENT-SIDE, because client-side validation is too easy to bypass, so malicious users can still easily send bad data through to your server. 
+    -
+  -->
+
+
+  <!--                               WHAT IS FORM VALIDATION? 
+    - FORM VALIDATION - When you enter data, the browser and/or the web server will check to see that the data is in the correct format and within the constraints set by the application. 
+    - Validation done in the browser is called CLIENT-SIDE VALIDATION
+    - Validation done on the server is called SERVER-SIDE VALIDATION
+    - If the information is correctly formatted, the application allows the data to be submitted to the server and (usually) saved in a database; 
+    - if the information isn't correctly formatted, it gives the user an error message explaining what needs to be corrected, and lets them try again.
+    
+    - THREE MAIN REASONS FOR VALIDATING FORMS:
+      1. We want to get the right data, in the right format. Our applications won't work properly if our users' data is stored in the wrong format, is incorrect, or is omitted altogether.
+      2. We want to protect our users' data. Forcing our users to enter secure passwords makes it easier to protect their account information.
+      3. We want to protect ourselves. There are many ways that malicious users can misuse unprotected forms to damage the application 
+  -->
+
+
+<!--                          DIFFERENT TYPES OF *CLIENT-SIDE* VALIDATION
+  -2 TYPES OF CLIENT-SIDE VALIDATION ON THE WEB
+    1. BUILT-IN FORM VALIDATION - 
+        * uses HTML5 form validation features
+        * generally doesn't require much JavaScript
+        * Built-in form validation has better performance than JavaScript, but it is not as customizable.
+
+    2. JAVASCRIPT - 
+        * Completely customizable, but you need to create it all (or use a library)
+ -->
+
+ <!--                        BUILT-IN FORM VALIDATION EXAMPLES
+
+  VOCAB WORDS:
+  - form control -
+  - <input> element - a typed data field, usually with a form control to allow the user to edit the data.
+  - <label> element - a caption in a user interface. The caption can be associated with a specific form control, known as the LABEL ELEMENT'S labeled control, either using the FOR ATTRIBUTE, or by putting the form control inside the label element itself.
+  - <button> element - a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality. By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change buttons’ appearance with CSS.
+
+
+  -->
+
+
+
+
+
+
+
+  <!--                                         TIPS & RANDOM THINGS                                          
+  
+
+
+  - This form needs to take in data and return a message if/when incorrect data is received 
+  -  //A standard IF statement. If(value) {/*- green -*/} else { /*- white -*/ }
+Equality in JavaScript -  
+  types: 
+Not Equal - https://dorey.github.io/JavaScript-Equality-Table/unified/
+Loose Equality - often gives a false positive like "1" is true or [} is 
+Strict equality - Mostly evaluates as one would expect-->
+ 
